@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Owen's Killer Blogo</title>
+</head>
+<body>
+<h1><a href="/">Owen's killer blog</a></h1>
+
+
+<hr>
+{% for post in posts %}
+<div>
+    <div><h2>{{ post.title }}</h2></div>
+    <div>{{ post.content }}</div>
+</div>
+{% endfor %}
+
+</body>
+</html>
